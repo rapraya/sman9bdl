@@ -1,0 +1,378 @@
+/* Public visual system — SMA Negeri 9 Bandar Lampung
+   Scoped to the public website. The locked administrator login is not affected. */
+:root {
+    --navy: #071A33;
+    --navy-deep: #041124;
+    --blue: #004BA6;
+    --blue-soft: #EAF2FF;
+    --accent: #002BD8;
+    --electric-blue: #00ADFF;
+    --gold: #FFD700;
+    --gold-light: #FFF5C2;
+    --ink: #162B45;
+    --muted: #66778B;
+    --line: #E2EAF3;
+    --paper: #FFFFFF;
+    --surface: #F4F7FC;
+    --surface-glass: rgba(255, 255, 255, .90);
+    --radius: 18px;
+    --shadow: 0 20px 55px rgba(7, 26, 51, .10);
+    --content: 1200px;
+}
+
+html {
+    scroll-padding-top: 96px;
+    text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
+}
+
+body {
+    color: var(--ink);
+    background: var(--paper);
+    line-height: 1.65;
+}
+
+a {
+    text-underline-offset: .18em;
+    text-decoration-thickness: .07em;
+}
+
+:focus-visible {
+    outline: 3px solid var(--electric-blue);
+    outline-offset: 3px;
+}
+
+.container {
+    width: min(calc(100% - 48px), var(--content));
+}
+
+.utility-bar {
+    background: var(--navy-deep);
+    color: #DCE8F6;
+}
+
+.utility-links a:hover,
+.utility-links a:focus-visible {
+    color: var(--gold);
+}
+
+.site-header {
+    background: rgba(255, 255, 255, .96);
+    border-bottom-color: rgba(7, 26, 51, .09);
+    box-shadow: 0 8px 28px rgba(7, 26, 51, .045);
+}
+
+.brand-mark {
+    background: linear-gradient(145deg, var(--blue), var(--navy));
+    color: var(--gold);
+    box-shadow: 0 9px 22px rgba(0, 75, 166, .20);
+}
+
+.brand-copy strong {
+    color: var(--navy);
+}
+
+.primary-nav a {
+    color: #53657A;
+}
+
+.primary-nav a:hover,
+.primary-nav a[aria-current="page"] {
+    color: var(--blue);
+}
+
+.primary-nav a:after {
+    background: var(--gold);
+}
+
+.primary-nav .nav-service {
+    background: var(--blue-soft);
+    color: var(--blue);
+}
+
+.header-search {
+    border-left-color: var(--line);
+}
+
+.header-search button {
+    color: var(--blue);
+}
+
+.hero-section {
+    background:
+        radial-gradient(circle at 78% 28%, rgba(0, 173, 255, .22), transparent 29%),
+        radial-gradient(circle at 15% 95%, rgba(0, 43, 216, .18), transparent 32%),
+        linear-gradient(112deg, var(--navy-deep) 0%, #003775 57%, var(--blue) 100%);
+}
+
+.hero-grid-pattern {
+    opacity: .075;
+}
+
+.hero-copy h1 {
+    color: #FFFFFF;
+    letter-spacing: -.052em;
+}
+
+.hero-lead {
+    color: #E0EBF8;
+}
+
+.eyebrow-light {
+    color: #FFE680;
+}
+
+.button {
+    min-height: 46px;
+    border-radius: 10px;
+    font-weight: 700;
+}
+
+.button-gold {
+    background: var(--gold);
+    color: var(--navy-deep);
+    box-shadow: 0 9px 22px rgba(0, 0, 0, .16);
+}
+
+.button-gold:hover {
+    background: #FFE65C;
+    color: var(--navy-deep);
+}
+
+.button-outline-light {
+    border-color: rgba(255, 255, 255, .42);
+    background: rgba(255, 255, 255, .07);
+}
+
+.button-outline-light:hover {
+    background: rgba(255, 255, 255, .14);
+}
+
+.button-dark {
+    background: var(--blue);
+    color: #FFFFFF;
+}
+
+.button-dark:hover {
+    background: var(--accent);
+}
+
+.hero-photo {
+    height: 390px;
+    border-radius: 22px;
+    border: 1px solid rgba(255, 255, 255, .25);
+    box-shadow: 0 28px 70px rgba(0, 0, 0, .26);
+}
+
+.hero-stamp {
+    border-color: rgba(255, 215, 0, .55);
+    background: rgba(7, 26, 51, .82);
+    color: #FFFFFF;
+}
+
+.hero-stamp strong,
+.hero-stamp span {
+    color: var(--gold);
+}
+
+.hero-footnote-line {
+    background: var(--gold);
+}
+
+.hero-bottom-line {
+    border-top-color: rgba(255, 255, 255, .12);
+}
+
+.quick-access-section {
+    background: var(--surface);
+    border-bottom-color: var(--line);
+}
+
+.quick-link {
+    border-left-color: var(--line);
+}
+
+.quick-link:hover {
+    background: #FFFFFF;
+}
+
+.quick-number,
+.quick-link b {
+    color: #8B6B16;
+}
+
+.quick-intro h2,
+.section-heading h2 {
+    color: var(--navy);
+}
+
+.eyebrow {
+    color: #8B6B16;
+}
+
+.section-block {
+    padding-top: clamp(64px, 7vw, 92px);
+    padding-bottom: clamp(64px, 7vw, 92px);
+}
+
+.announcement-band {
+    background:
+        radial-gradient(circle at 86% 15%, rgba(0, 173, 255, .16), transparent 26%),
+        linear-gradient(110deg, var(--navy-deep), var(--blue));
+}
+
+.text-link-light,
+.announcement-row>span:last-child {
+    color: var(--gold);
+}
+
+.announcement-row:hover strong {
+    color: #FFE680;
+}
+
+.profile-teaser-mark {
+    background:
+        radial-gradient(circle at 70% 26%, rgba(0, 173, 255, .20), transparent 30%),
+        linear-gradient(145deg, var(--navy), var(--blue));
+}
+
+.mark-outline {
+    color: rgba(255, 255, 255, .16);
+}
+
+.mark-caption {
+    color: #FFE680;
+}
+
+.profile-facts strong {
+    color: var(--blue);
+}
+
+.story-card {
+    border-color: var(--line);
+    border-radius: 14px;
+    overflow: hidden;
+    box-shadow: 0 8px 26px rgba(7, 26, 51, .045);
+}
+
+.story-card:hover {
+    border-color: rgba(0, 75, 166, .28);
+    box-shadow: var(--shadow);
+}
+
+.story-image {
+    background: var(--navy);
+}
+
+.story-copy h3,
+.results-heading,
+.search-result strong {
+    color: var(--navy);
+}
+
+.story-copy .text-link,
+.text-link {
+    color: var(--blue);
+}
+
+.gallery-item {
+    border-radius: 12px;
+}
+
+.page-hero {
+    background:
+        radial-gradient(circle at 85% 10%, rgba(0, 173, 255, .18), transparent 28%),
+        linear-gradient(115deg, var(--navy-deep), var(--blue));
+}
+
+.article-header {
+    background: var(--surface);
+    border-bottom-color: var(--line);
+}
+
+.article-header h1,
+.profile-main h2,
+.profile-detail h3,
+.information-main h2,
+.article-aside-card h2 {
+    color: var(--navy);
+}
+
+.article-excerpt,
+.profile-detail blockquote {
+    border-left-color: var(--gold);
+}
+
+.information-note,
+.contact-card {
+    background: var(--surface);
+    border-left-color: var(--gold);
+}
+
+.pagination a[aria-current="page"] {
+    background: var(--blue);
+    border-color: var(--blue);
+}
+
+.site-footer {
+    background: var(--navy-deep);
+}
+
+.footer-brand .brand-mark {
+    background: linear-gradient(145deg, var(--blue), var(--navy));
+    color: var(--gold);
+}
+
+.footer-main h2 {
+    color: #FFFFFF;
+}
+
+.footer-main a:hover {
+    color: var(--gold);
+}
+
+.empty-state {
+    border-color: #D6E1EE;
+    background: var(--surface);
+    border-radius: 14px;
+}
+
+.empty-icon {
+    border-color: #B18B16;
+    color: #8B6B16;
+}
+
+@media (max-width: 900px) {
+    .container {
+        width: min(calc(100% - 38px), var(--content));
+    }
+    .hero-photo {
+        border-radius: 18px;
+    }
+}
+
+@media (max-width: 640px) {
+    .container {
+        width: min(calc(100% - 32px), var(--content));
+    }
+    .hero-photo {
+        height: 280px;
+        border-radius: 16px;
+    }
+    .button {
+        min-height: 44px;
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    html {
+        scroll-behavior: auto;
+    }
+    *,
+    *::before,
+    *::after {
+        animation-duration: .01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: .01ms !important;
+    }
+}
