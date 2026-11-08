@@ -1,0 +1,12 @@
+Options -Indexes
+
+# Public uploads are for validated image documents only.
+# Deny executable and server-side script extensions even if uploaded by mistake.
+<FilesMatch "\.(?i:php[0-9]?|phtml|phar|cgi|pl|py|sh|asp|aspx|jsp|fcgi)$">
+    Require all denied
+</FilesMatch>
+
+<IfModule mod_rewrite.c>
+    RewriteEngine On
+    RewriteRule \.(?i:php[0-9]?|phtml|phar|cgi|pl|py|sh|asp|aspx|jsp|fcgi)$ - [F,END]
+</IfModule>
