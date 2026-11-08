@@ -99,6 +99,7 @@ a {
 }
 
 .hero-section :focus-visible,
+.page-hero :focus-visible,
 .announcement-band :focus-visible,
 .site-footer :focus-visible {
     outline-color: var(--gold);
