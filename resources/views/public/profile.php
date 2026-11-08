@@ -30,10 +30,6 @@ $schoolRecognitions = trim(setting('school_recognitions'));
         <div class="profile-main">
             <p class="eyebrow">IDENTITAS SEKOLAH</p>
             <h2><?= e($schoolName) ?></h2>
-            <?php if ($schoolVision !== ''): ?>
-                <p class="lead-paragraph"><?= e($schoolVision) ?></p>
-            <?php endif; ?>
-
             <div class="fact-table">
                 <div><span>Nama sekolah</span><strong><?= e($schoolName) ?></strong></div>
                 <?php if ($schoolShortName !== ''): ?>
