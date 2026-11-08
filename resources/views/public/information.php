@@ -1,4 +1,5 @@
-<section class="page-hero"><div class="container"><p class="eyebrow eyebrow-light">INFORMASI SEKOLAH</p><h1><?= e($title) ?>.</h1><p><?= e($metaDescription ?? '') ?></p></div></section>
+<?php require BASE_PATH . '/resources/views/partials/page-hero.php'; ?>
+<?php require BASE_PATH . '/resources/views/partials/page-intro-card.php'; ?>
 <section class="section-block"><div class="container information-layout"><div class="information-main">
     <?php if (!empty($page)): ?><p class="eyebrow"><?= e($page['category'] ?: 'INFORMASI RESMI') ?></p><div class="article-body"><?= nl2br(e($page['body'])) ?></div>
     <?php elseif (($slug ?? '') === 'akademik'): ?><?php require BASE_PATH . '/resources/views/partials/empty-state.php'; ?>

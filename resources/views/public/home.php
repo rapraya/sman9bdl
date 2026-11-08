@@ -1,25 +1,40 @@
-<section class="hero-section">
+<section class="hero-section home-hero" aria-labelledby="home-hero-title">
+    <div class="home-hero-backdrop" aria-hidden="true">
+        <?php if (trim(setting('hero_image')) !== ''): ?><img src="<?= e('/' . ltrim(setting('hero_image'), '/')) ?>" alt="" fetchpriority="high">
+        <?php else: ?><div class="home-hero-fallback"><span class="home-hero-fallback-orbit"></span><span class="home-hero-fallback-mark">09</span></div><?php endif; ?>
+    </div>
     <div class="hero-grid-pattern" aria-hidden="true"></div>
-    <div class="container hero-inner">
-        <div class="hero-copy">
-            <p class="eyebrow eyebrow-light"><span></span> PORTAL RESMI SEKOLAH</p>
-            <h1><?= e(setting('hero_title', 'SMA Negeri 9 Bandar Lampung')) ?></h1>
-            <p class="hero-lead"><?= e(setting('hero_description', setting('school_vision'))) ?></p>
-            <div class="hero-actions"><a class="button button-gold" href="/profil">Jelajahi profil sekolah <span aria-hidden="true">↗</span></a><a class="button button-outline-light" href="/berita">Berita sekolah</a></div>
-            <div class="hero-footnote"><span class="hero-footnote-line"></span><span>Informasi · Publikasi · Layanan Pendidikan</span></div>
-        </div>
-        <div class="hero-visual" aria-label="Identitas SMA Negeri 9 Bandar Lampung">
-            <?php if (setting('hero_image') !== ''): ?><img class="hero-photo" src="<?= e('/' . ltrim(setting('hero_image'), '/')) ?>" alt="Lingkungan SMA Negeri 9 Bandar Lampung">
-            <?php else: ?>
-                <div class="hero-architecture" aria-hidden="true"><div class="architecture-sun"></div><div class="architecture-building"><div class="building-roof"></div><div class="building-body"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div><div class="building-base"></div></div><div class="architecture-ground"></div></div>
-                <div class="hero-visual-label"><span class="label-number">09</span><span><strong>SMALAN</strong><small>Bandar Lampung · Lampung</small></span></div>
+    <div class="container home-hero-inner">
+        <div class="hero-copy home-hero-copy">
+            <p class="eyebrow eyebrow-light"><span aria-hidden="true"></span><?= e(setting('hero_eyebrow', 'SELAMAT DATANG DI')) ?></p>
+            <h1 id="home-hero-title"><?= e(setting('hero_title', 'SMA Negeri 9 Bandar Lampung')) ?></h1>
+            <?php if (trim(setting('hero_description', setting('site_description'))) !== ''): ?><p class="hero-lead"><?= e(setting('hero_description', setting('site_description'))) ?></p><?php endif; ?>
+            <div class="hero-actions"><a class="button button-gold" href="/profil">Jelajahi sekolah <span aria-hidden="true">↗</span></a><a class="button button-outline-light" href="/berita">Berita sekolah</a></div>
+            <?php if (!empty($homeHeroStats)): ?>
+                <dl class="home-hero-stats" aria-label="Statistik sekolah">
+                    <?php foreach ($homeHeroStats as $stat): ?>
+                        <div class="home-hero-stat"><span class="home-stat-icon" aria-hidden="true"><?= e($stat['symbol']) ?></span><div><dt><?= e($stat['label']) ?></dt><dd><?= e($stat['value']) ?></dd></div></div>
+                    <?php endforeach; ?>
+                </dl>
             <?php endif; ?>
-            <?php if (preg_match('/^\d{4}$/', trim(setting('founded_year'))) === 1): ?><div class="hero-stamp"><span>SEJAK</span><strong><?= e(setting('founded_year')) ?></strong><small>TAHUN BERDIRI</small></div><?php endif; ?>
-            <div class="hero-orbit orbit-one"></div><div class="hero-orbit orbit-two"></div>
+        </div>
+        <div class="home-hero-brand" aria-hidden="true">
+            <?php if (trim(setting('logo_path')) !== ''): ?><img src="<?= e('/' . ltrim(setting('logo_path'), '/')) ?>" alt="">
+            <?php else: ?><span class="home-hero-brand-mark">09</span><?php endif; ?>
+            <span class="home-hero-brand-name"><?= e(setting('school_short_name', 'SMALAN')) ?></span>
+            <span class="home-hero-brand-caption">SMA Negeri 9 Bandar Lampung</span>
         </div>
     </div>
-    <div class="hero-bottom-line"><div class="container"><span>01 / INFORMASI SEKOLAH</span><span>PORTAL INFORMASI RESMI SMA NEGERI 9 BANDAR LAMPUNG</span><span>↓</span></div></div>
+    <div class="home-hero-bottom"><div class="container"><span>PORTAL INFORMASI RESMI SEKOLAH</span><span>INFORMASI · PUBLIKASI · LAYANAN PENDIDIKAN</span></div></div>
 </section>
+<div class="home-search-bridge"><div class="container">
+    <form class="home-search-form" action="/cari" method="get" role="search">
+        <label class="sr-only" for="home-search-query">Cari berita, pengumuman, agenda, atau informasi sekolah</label>
+        <span class="home-search-icon" aria-hidden="true">⌕</span>
+        <input id="home-search-query" type="search" name="q" placeholder="Cari berita, pengumuman, agenda, atau informasi sekolah…">
+        <button class="button button-gold" type="submit">Cari informasi <span aria-hidden="true">↗</span></button>
+    </form>
+</div></div>
 
 <section class="quick-access-section"><div class="container quick-access-grid">
     <div class="quick-intro"><p class="eyebrow">AKSES CEPAT</p><h2>Temukan yang Anda cari.</h2><p>Akses langsung informasi dan layanan sekolah.</p></div>

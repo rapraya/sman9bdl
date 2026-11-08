@@ -10,14 +10,8 @@ $schoolHistory = trim(setting('school_history'));
 $schoolFacilities = trim(setting('school_facilities'));
 $schoolRecognitions = trim(setting('school_recognitions'));
 ?>
-<section class="page-hero">
-    <div class="container">
-        <p class="eyebrow eyebrow-light">PROFIL SEKOLAH</p>
-        <h1>Mengenal <?= e($schoolName) ?>.</h1>
-        <p>Identitas dan informasi resmi sekolah.</p>
-    </div>
-</section>
-
+<?php require BASE_PATH . '/resources/views/partials/page-hero.php'; ?>
+<?php require BASE_PATH . '/resources/views/partials/page-intro-card.php'; ?>
 <section class="section-block">
     <div class="container profile-page-grid">
         <aside class="profile-side">

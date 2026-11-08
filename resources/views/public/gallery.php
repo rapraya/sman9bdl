@@ -1,10 +1,5 @@
-<section class="page-hero page-hero-compact">
-    <div class="container">
-        <p class="eyebrow eyebrow-light">DOKUMENTASI</p>
-        <h1>Galeri sekolah.</h1>
-        <p>Dokumentasi foto yang dipublikasikan melalui pengelolaan resmi website sekolah.</p>
-    </div>
-</section>
+<?php require BASE_PATH . '/resources/views/partials/page-hero.php'; ?>
+<?php require BASE_PATH . '/resources/views/partials/page-intro-card.php'; ?>
 <section class="section-block">
     <div class="container">
         <?php if ($items): ?>
