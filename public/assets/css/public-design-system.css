@@ -38,7 +38,7 @@ a {
 }
 
 :focus-visible {
-    outline: 3px solid var(--electric-blue);
+    outline: 3px solid var(--accent);
     outline-offset: 3px;
 }
 
@@ -96,6 +96,12 @@ a {
 
 .header-search button {
     color: var(--blue);
+}
+
+.hero-section :focus-visible,
+.announcement-band :focus-visible,
+.site-footer :focus-visible {
+    outline-color: var(--gold);
 }
 
 .hero-section {
