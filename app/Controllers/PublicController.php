@@ -78,7 +78,7 @@ final class PublicController
         $page = $stmt->fetch() ?: null;
         View::public('public/information', $this->base([
             'title' => $page['title'] ?? $title,
-            'metaDescription' => $page['seo_description'] ?? $description,
+            'metaDescription' => trim((string) ($page['seo_description'] ?? '')) !== '' ? $page['seo_description'] : $description,
             'activeNav' => $slug,
             'slug' => $slug,
             'page' => $page,
@@ -154,7 +154,7 @@ final class PublicController
         $scheme = (!empty($_SERVER['HTTPS']) && $_SERVER['HTTPS'] !== 'off') ? 'https' : 'http';
         $host = preg_replace('/[^a-zA-Z0-9.\\-:]/', '', (string) ($_SERVER['HTTP_HOST'] ?? 'localhost'));
         $base = $scheme . '://' . $host;
-        $urls = ['/', '/profil', '/akademik', '/kesiswaan', '/berita', '/pengumuman', '/agenda', '/prestasi', '/galeri', '/layanan-publik', '/spmb', '/kontak'];
+        $urls = ['/', '/profil', '/akademik', '/kesiswaan', '/berita', '/pengumuman', '/agenda', '/prestasi', '/galeri', '/layanan-publik', '/spmb', '/kontak', '/kebijakan-privasi'];
         $items = Database::pdo()->query("SELECT type,slug FROM contents WHERE status='published' AND (publish_at IS NULL OR publish_at <= NOW())")->fetchAll();
         foreach ($items as $item) {
             $urls[] = content_url($item['type'], $item['slug']);
