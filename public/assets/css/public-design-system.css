@@ -398,7 +398,7 @@ a {
 .page-hero-system h1{max-width:760px;margin:0;color:#FFF;font-size:clamp(34px,4vw,48px);font-weight:780;line-height:1.1;letter-spacing:-.04em;overflow-wrap:anywhere}
 .page-hero-subtitle{max-width:650px;margin:9px 0 0;color:#D9E8F7;font-size:13px;line-height:1.6}
 .page-hero-art{position:absolute;z-index:1;top:0;right:0;bottom:0;width:42%;display:flex;align-items:center;justify-content:center;pointer-events:none}
-.page-hero-watermark{position:absolute;right:4%;bottom:24px;color:rgba(255,255,255,.075);font-size:clamp(58px,8vw,104px);font-weight:900;line-height:.85;letter-spacing:-.06em;white-space:nowrap;user-select:none}
+.page-hero-watermark{position:absolute;right:4%;bottom:24px;color:rgba(255,255,255,.075);font-size:clamp(58px,8vw,104px);font-weight:800;line-height:.85;letter-spacing:-.06em;white-space:nowrap;user-select:none}
 .page-hero-icon{position:absolute;top:50%;right:18%;display:grid;place-items:center;width:76px;height:76px;color:#FFF;border:1px solid rgba(255,255,255,.42);border-radius:21px;background:rgba(255,255,255,.10);box-shadow:0 14px 35px rgba(0,0,0,.12),inset 0 1px 0 rgba(255,255,255,.12);transform:translateY(-50%) rotate(7deg);backdrop-filter:blur(8px)}
 .page-hero-icon svg{width:36px;height:36px}.page-hero-caption{position:absolute;right:10%;bottom:33px;color:rgba(255,255,255,.78);font-size:8px;font-weight:650;letter-spacing:.04em}
 .page-intro-wrap{position:relative;z-index:5;margin-top:-21px;margin-bottom:0}
@@ -421,14 +421,14 @@ a {
 .home-hero .hero-grid-pattern{z-index:-1;opacity:.08}
 .home-hero-inner{position:relative;display:flex;align-items:center;min-height:350px;padding-top:39px;padding-bottom:57px}
 .home-hero-copy{position:relative;z-index:2;width:min(72%,780px);max-width:780px;padding:0}.home-hero-copy .eyebrow{margin-bottom:11px}
-.home-hero-copy h1{max-width:720px;font-family:"Plus Jakarta Sans",Arial,sans-serif;font-size:clamp(38px,4.5vw,58px);font-weight:820;letter-spacing:-.05em}
+.home-hero-copy h1{max-width:720px;font-family:"Plus Jakarta Sans",Arial,sans-serif;font-size:clamp(38px,4.5vw,58px);font-weight:800;letter-spacing:-.05em}
 .home-hero-copy .hero-lead{max-width:610px;margin:12px 0 19px;font-size:13px;line-height:1.7}.home-hero-copy .hero-actions{gap:9px}.home-hero-copy .button{min-height:39px;padding:9px 14px;font-size:11px}
 .home-hero-brand{position:absolute;right:5%;top:50%;z-index:1;display:flex;flex-direction:column;align-items:center;gap:7px;width:178px;padding:19px 14px 17px;border:1px solid rgba(255,255,255,.30);border-radius:19px;color:#FFF;text-align:center;background:rgba(7,34,65,.56);box-shadow:0 18px 42px rgba(0,0,0,.18);transform:translateY(-50%);backdrop-filter:blur(9px)}
 .home-hero-brand img{width:58px;height:58px;object-fit:contain}.home-hero-brand-mark{display:grid;place-items:center;width:58px;height:58px;border:1px solid rgba(255,215,0,.7);border-radius:50%;color:#FFD700;font:37px/1 "Plus Jakarta Sans",Arial,sans-serif}
 .home-hero-brand-name{font-size:17px;font-weight:800;letter-spacing:.08em}.home-hero-brand-caption{color:#D7E6F5;font-size:8px}
 .home-hero-stats{display:flex;align-items:stretch;flex-wrap:wrap;gap:0;margin:19px 0 0;padding:0;border-top:1px solid rgba(255,255,255,.20)}
 .home-hero-stat{display:flex;align-items:center;gap:8px;min-width:112px;padding:10px 17px 0 0;margin-right:17px}.home-stat-icon{display:grid;place-items:center;width:27px;height:27px;flex:0 0 auto;border:1px solid rgba(255,215,0,.50);border-radius:7px;background:rgba(255,255,255,.08);color:#FFD700;font-size:13px;font-weight:800}
-.home-hero-stat>div{display:flex;align-items:baseline;flex-wrap:wrap;gap:5px}.home-hero-stat dd{order:1;margin:0;color:#FFF;font-size:19px;font-weight:850;line-height:1}.home-hero-stat dt{order:0;color:#E4EEF8;font-size:8px;font-weight:750;letter-spacing:.07em;text-transform:uppercase}
+.home-hero-stat>div{display:flex;align-items:baseline;flex-wrap:wrap;gap:5px}.home-hero-stat dd{order:1;margin:0;color:#FFF;font-size:19px;font-weight:800;line-height:1}.home-hero-stat dt{order:0;color:#E4EEF8;font-size:8px;font-weight:750;letter-spacing:.07em;text-transform:uppercase}
 .home-hero-bottom{position:absolute;right:0;bottom:0;left:0;border-top:1px solid rgba(255,255,255,.12)}
 .home-hero-bottom .container{display:flex;justify-content:space-between;gap:18px;padding-top:9px;padding-bottom:9px;color:rgba(230,241,250,.78);font-size:8px;font-weight:700;letter-spacing:.11em}
 .home-search-bridge{position:relative;z-index:4;margin-top:-21px}
