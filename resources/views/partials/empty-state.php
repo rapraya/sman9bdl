@@ -1,0 +1,1 @@
+<div class="empty-state"><span class="empty-icon" aria-hidden="true">i</span><h3>Belum ada informasi yang dipublikasikan</h3><p>Informasi pada bagian ini akan ditampilkan setelah diterbitkan melalui pengelolaan resmi website sekolah.</p></div>

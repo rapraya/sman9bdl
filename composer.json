@@ -1,0 +1,20 @@
+{
+  "name": "smalan/portal-sekolah",
+  "description": "Portal informasi dan CMS resmi SMA Negeri 9 Bandar Lampung",
+  "type": "project",
+  "require": {
+    "php": ">=8.1",
+    "ext-pdo": "*",
+    "ext-pdo_mysql": "*",
+    "ext-fileinfo": "*"
+  },
+  "autoload": {
+    "psr-4": {
+      "App\\": "app/"
+    }
+  },
+  "config": {
+    "optimize-autoloader": true,
+    "sort-packages": true
+  }
+}

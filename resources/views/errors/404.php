@@ -1,0 +1,1 @@
+<section class="error-page"><div class="container"><span>404</span><h1>Halaman tidak ditemukan.</h1><p>Halaman yang Anda cari mungkin telah dipindahkan atau alamatnya tidak tepat.</p><a class="button button-dark" href="/">Kembali ke beranda</a></div></section>

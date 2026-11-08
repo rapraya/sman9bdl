@@ -1,0 +1,1 @@
+<div class="admin-main"><section class="admin-content"><div class="admin-empty"><h1>Akses tidak diizinkan</h1><p>Akun Anda tidak memiliki izin untuk membuka halaman ini.</p><a class="button button-primary" href="/admin">Kembali ke dashboard</a></div></section></div>
