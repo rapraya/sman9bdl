@@ -57,33 +57,26 @@ if ($theme === 'custom' && !empty($loginBackground['id'])) {
                     </span>
                 </a>
             </header>
-
             <div class="login-card-heading">
                 <p class="login-eyebrow">ADMINISTRATOR PORTAL</p>
                 <h1>Selamat datang kembali.</h1>
                 <p>Masuk untuk mengelola website sekolah.</p>
             </div>
-
             <?php if (!empty($installed)): ?><div class="admin-alert alert-success login-alert" role="status"><span class="login-alert-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none"><path d="m5 12.5 4.2 4.2L19 7"/></svg></span><span>Instalasi database selesai. Silakan masuk dengan akun administrator.</span></div><?php endif; ?>
             <?php if (!empty($error)): ?><div class="admin-alert alert-error login-alert" role="alert" aria-live="assertive" aria-atomic="true" data-auto-dismiss="3000"><span class="login-alert-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none"><path d="M12 8v5m0 3.5h.01M10.3 3.9 2.8 17a2 2 0 0 0 1.7 3h15a2 2 0 0 0 1.7-3l-7.5-13.1a2 2 0 0 0-3.4 0Z"/></svg></span><span><?= e($error) ?></span></div><?php endif; ?>
-
             <form method="post" action="/admin/login" class="login-form" id="login-form">
                 <?= csrf_field() ?>
                 <div class="login-field">
                     <label class="visually-hidden" for="login-identifier">Nama Pengguna atau Email</label>
                     <div class="login-input-wrap">
-                        <span class="login-input-icon" aria-hidden="true">
-                            <svg viewBox="0 0 24 24" fill="none"><circle cx="12" cy="8" r="3.6"/><path d="M4.8 20c.4-3.4 3.2-5.4 7.2-5.4s6.8 2 7.2 5.4" stroke-linecap="round"/></svg>
-                        </span>
+                        <span class="login-input-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none"><circle cx="12" cy="8" r="3.6"/><path d="M4.8 20c.4-3.4 3.2-5.4 7.2-5.4s6.8 2 7.2 5.4" stroke-linecap="round"/></svg></span>
                         <input id="login-identifier" type="text" name="identifier" autocomplete="username" placeholder="Nama Pengguna / Email" aria-label="Nama Pengguna atau Email" required autofocus maxlength="190">
                     </div>
                 </div>
                 <div class="login-field">
                     <label class="visually-hidden" for="login-password">Kata Sandi</label>
                     <div class="login-input-wrap">
-                        <span class="login-input-icon" aria-hidden="true">
-                            <svg viewBox="0 0 24 24" fill="none"><rect x="4" y="10" width="16" height="11" rx="2.2"/><path d="M8 10V7a4 4 0 0 1 8 0v3" stroke-linecap="round"/><path d="M12 14.5v2.5" stroke-linecap="round"/></svg>
-                        </span>
+                        <span class="login-input-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none"><rect x="4" y="10" width="16" height="11" rx="2.2"/><path d="M8 10V7a4 4 0 0 1 8 0v3" stroke-linecap="round"/><path d="M12 14.5v2.5" stroke-linecap="round"/></svg></span>
                         <input id="login-password" type="password" name="password" autocomplete="current-password" placeholder="Kata Sandi" aria-label="Kata Sandi" required>
                         <button type="button" class="password-toggle" data-password-toggle="login-password" aria-label="Tampilkan kata sandi" aria-pressed="false">
                             <svg class="password-eye-open" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M2.2 12s3.5-7 9.8-7 9.8 7 9.8 7-3.5 7-9.8 7-9.8-7-9.8-7Z"/><circle cx="12" cy="12" r="3"/></svg>
@@ -93,7 +86,6 @@ if ($theme === 'custom' && !empty($loginBackground['id'])) {
                 </div>
                 <button type="submit" class="button button-primary button-wide login-submit"><span>Masuk ke dashboard</span><span aria-hidden="true">↗</span></button>
             </form>
-
             <a class="login-back" href="/">← Kembali ke website publik</a>
             <footer class="login-panel-footer"><span>© <?= date('Y') ?> <?= e($schoolName ?? 'SMA Negeri 9 Bandar Lampung') ?></span><span>ADMINISTRATOR</span></footer>
         </div>

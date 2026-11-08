@@ -6,7 +6,9 @@
     <title><?= e($pageTitle ?? 'Dashboard') ?> | Admin SMALAN</title>
     <link rel="icon" href="/assets/images/favicon.svg" type="image/svg+xml">
     <link rel="stylesheet" href="/assets/css/admin.css">
+    <link rel="stylesheet" href="/assets/css/admin-experience.css">
     <script src="/assets/js/admin.js" defer></script>
+    <script src="/assets/js/admin-experience.js" defer></script>
 </head>
 <body class="admin-body">
 <div class="admin-shell">
