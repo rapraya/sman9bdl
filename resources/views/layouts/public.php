@@ -13,7 +13,7 @@
     <?php
     $canonicalParts = parse_url((string) ($canonical ?? ''));
     $publicOrigin = isset($canonicalParts['scheme'], $canonicalParts['host'])
-        ? $canonicalParts['scheme'] . '://' . $canonicalParts['host']
+        ? $canonicalParts['scheme'] . '://' . $canonicalParts['host'] . (isset($canonicalParts['port']) ? ':' . $canonicalParts['port'] : '')
         : '';
     ?>
     <?php if (!empty($item['image_path']) && $publicOrigin !== ''): ?>
